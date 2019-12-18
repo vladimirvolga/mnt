@@ -1,0 +1,394 @@
+@import "_vars.sass"
+@import "reset.sass"
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap.scss'
+
+
+
+body
+  font-family: "Roboto", sans-serif
+  //font-family: "", sans-serif
+  margin: 0
+  background-color: #fff
+
+
+
+
+
+/*   ---------         C O L U M N         ---------   */
+
+
+
+.sw_XC-YC
+
+    display: flex
+
+    //Свойство выравнивает flex-элементы по главной (горизонт) оси flex-контейнера
+    //Flex-элементы выравниваются по центру flex-контейнера.
+    //justify-content: center
+
+    //Поля flex-элемента центрируется по поперечной (вертикаль) оси в пределах flex-линии.
+    //align-items: center
+
+    //Свойство выравнивает строки в flex-контейнере при наличии дополнительного
+    //пространства по центру поперечной (вертикаль) оси
+    //align-content: center
+    //align-content: flex-start
+
+    position: fixed
+    top: 0
+    left: 0
+
+
+    width: 100%
+    height: 100%
+
+    overflow: auto
+
+
+//*** проверено ***
+.sw_dF-fdC-xL-yT
+
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+
+//*** проверено ***
+.sw_dF-fdC-xC-yT
+
+    display: flex
+    flex-direction: column
+    align-items: center
+
+
+//*** проверено ***
+.sw_dF-fdC-xR-yT
+
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+
+
+
+
+/*   ---------         R O W         ---------   */
+
+
+
+//*** проверено ***
+.sw_dF-fdR-xL-yT
+
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+
+
+
+//*** проверено ***
+.sw_dF-fdR-xC-yT
+
+    display: flex
+    flex-direction: row
+
+    /*по оси X, главная ось*/
+    justify-content: center
+
+
+
+//*** проверено ***
+.sw_dF-fdR-xR-yT
+
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+
+
+
+/*Выравнивание элемента внутри блока*/
+/*по вертикали: ЦЕНТР*/
+/*по горизонтали: СЛЕВА*/
+
+//*** проверено ***
+.sw_dF-fdR-xL-yC
+
+    display: flex
+    flex-direction: row
+    align-items: center
+
+
+
+/*Выравнивание элемента внутри блока*/
+/*по вертикали: ЦЕНТР*/
+/*по горизонтали: ЦЕНТР*/
+
+//*** проверено ***
+.sw_dF-fdR-xC-yC
+
+    display: flex
+    flex-direction: row
+
+    /*по оси X, главная ось*/
+    justify-content: center
+
+    /*по оси Y, поперечная ось*/
+    align-items: center
+
+
+
+/*Выравнивание элемента внутри блока*/
+/*по вертикали: ЦЕНТР*/
+/*по горизонтали: СПРАВА*/
+
+//*** проверено ***
+.sw_dF-fdR-xR-yC
+
+    display: flex
+    flex-direction: row
+
+    /*по оси X, главная ось*/
+    justify-content: flex-end
+
+    /*по оси Y, поперечная ось*/
+    align-items: center
+
+
+
+//*** проверено ***
+.sw_yB_self
+
+    align-self: flex-end
+
+
+
+
+
+/*   ---------         Р А З М Е Р Ы         ---------   */
+
+
+
+.sw_w100pr
+
+    width: 100%
+
+
+
+.sw_w70pr
+
+    width: 70%
+
+
+
+.sw_w30pr
+
+    width: 30%
+
+
+
+.sw_w550px-min
+
+    min-width: 550px
+
+
+
+
+
+/*   ---------         M A R G I N    T O P         ---------   */
+
+
+
+.sw_mt-5
+
+    margin-top: 5px
+
+
+.sw_mt-10
+
+    margin-top: 10px
+
+
+.sw_mt-20
+
+    margin-top: 20px
+
+
+.sw_mt-30
+
+    margin-top: 30px
+
+
+.sw_mt-45
+
+    margin-top: 45px
+
+
+.sw_mt-50
+
+    margin-top: 50px
+
+
+
+
+
+/*   ---------         M A R G I N    B O T T O M         ---------   */
+
+
+
+.sw_mb-20
+
+    margin-bottom: 20px
+
+.sw_mb-16
+
+    margin-bottom: 16px
+
+
+
+
+/*   ---------         M A R G I N    L E F T         ---------   */
+
+
+
+.sw_ml-4
+
+    margin-left: 4px
+
+.sw_ml-8
+
+    margin-left: 8px
+
+.sw_ml-16
+
+    margin-left: 16px
+
+.sw_ml-20
+
+    margin-left: 20px
+
+
+.sw_ml-32
+
+    margin-left: 32px
+
+
+
+
+
+/*   ---------         M A R G I N    R I G H T         ---------   */
+
+
+
+.sw_mr-4
+
+    margin-right: 4px
+
+.sw_mr-8
+
+    margin-right: 8px
+
+.sw_mr-16
+
+    margin-right: 16px
+
+.sw_mr-20
+
+    margin-right: 20px
+
+.sw_mr-32
+
+    margin-right: 32px
+
+
+
+
+
+/*   ---------         V I S I B I L I T Y         ---------   */
+
+
+
+/* Полностью удаляет элемент из DOM */
+
+.sw_hidden-block
+
+    display: none!important
+
+
+
+.sw_border-visible
+
+    border: 1px solid #f11417
+
+
+
+
+
+/*   ---------         T E S T   E L E M E N T S         ---------   */
+
+
+
+.sw_test-sq100px-pink
+
+    width: 100px
+    height: 100px
+
+    margin-top: 5px
+
+    border: 1px solid #f11417
+    background-color: #FFC8C8
+
+
+.sw_test-sq20px-green
+
+    width: 20px
+    height: 20px
+
+    margin: 5px
+
+    border: 1px solid #f11417
+    background-color: #befffa
+
+
+.sw_test-sq20px-pink
+
+    width: 20px
+    height: 20px
+
+    margin: 5px
+
+    border: 1px solid #f11417
+    background-color: #FFC8C8
+
+
+
+
+
+/*   ---------         B O O T S T R A P   C O R R E C T I O N         ---------   */
+
+
+
+.container
+
+    margin-left: 0 !important
+    margin-right: 0 !important
+
+
+.container-fluid
+
+    margin-left: 0 !important
+    margin-right: 0 !important
+
+    padding: 0 !important
+
+
+.row
+
+    //margin-left: 0 !important
+    //margin-right: 0 !important
+
+    margin: 0 !important
+    padding: 0 !important
+
+
+
