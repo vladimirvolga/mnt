@@ -313,8 +313,14 @@ const actions = {
 
                 commit('CLEAR_SENSORS_DATA')
 
+
+                /*------*/
+
                 let deviceData = resp.data
                 // let deviceData = state.respImmitation
+
+                /*------*/
+
 
                 commit('SET_DEVICE_DATA', deviceData)
 

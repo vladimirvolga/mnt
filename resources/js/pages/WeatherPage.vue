@@ -14,7 +14,7 @@
 
     <!--   ГЛАВНЫЙ DIV ВСЕ ОСТАЛЬНЫЕ РАЗМЕЩАЮТСЯ В НЕМ   -->
 
-    <div class="wrapper_center-center">
+    <div class="sw_XC-YC">
     <!--<div class="page-container">-->
 
 

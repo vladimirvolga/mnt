@@ -19,9 +19,10 @@
 
         <div class="device-block">
 
-            <div class="sw_w100pr">
 
-                <div class="device sw_w100pr" v-if="device.length !== 0">
+
+
+                <div class="device " v-if="device.length !== 0">
 
 
                     <div class="sw_w100pr">
@@ -34,18 +35,12 @@
 
                 </div>
 
-            </div>
-
-
 
 
 
             <!--                 ДАТЧИКИ ВСЕ ВМЕСТЕ                   -->
 
 
-
-
-            <div class="sw_w100pr">
 
                 <div class="sensors-block" v-if="sensors.length !==0"
                      @click="weatherRequest">
@@ -106,25 +101,26 @@
                 </div>
 
 
-            </div>
 
 
 
-            <button class="button" @click = 'weatherRequest'>
-                Запрос погоды</button>
-            <button class="button" @click = 'checkBlockPosition'>
-                высота эл</button>
+            <!--<button class="button" @click = 'weatherRequest'>-->
+                <!--Запрос погоды</button>-->
+            <!--<button class="button" @click = 'checkBlockPosition'>-->
+                <!--высота эл</button>-->
 
 
 
 
 
-            <div class="cont sw_border-visible sw_dF-fdR-xR-yC">
+            <!--<div class="cont sw_border-visible sw_dF-fdR-xR-yC">-->
 
-                <div class="sw_test-sq20px-pink"></div>
-                <div class="sw_test-sq20px-pink"></div>
+                <!--<div class="sw_test-sq20px-pink"></div>-->
+                <!--<div class="sw_test-sq20px-pink"></div>-->
 
-            </div>
+            <!--</div>-->
+
+
 
 
 
@@ -258,12 +254,31 @@
         max-width: 300px
 
 
+    .device
+
+        display: flex
+        flex-direction: row
+
+        /*width: 100%*/
+        max-width: 300px
+        /*min-height: 300px*/
+
+        margin-top: 12px
+        margin-left: 12px
+        margin-right: 12px
+
+        padding: 12px
+
+        background-color: #2a2a2a
+
+
+
     .sensors-block
 
         display: flex
         flex-direction: row
 
-        width: 100%
+        /*width: 100%*/
         max-width: 300px
         /*min-height: 300px*/
 
@@ -279,22 +294,6 @@
         cursor: pointer
 
 
-    .device
-
-        display: flex
-        flex-direction: row
-
-        width: 100%
-        max-width: 300px
-        /*min-height: 300px*/
-
-        margin-top: 12px
-        margin-left: 12px
-        margin-right: 12px
-
-        padding: 12px
-
-        background-color: #2a2a2a
 
 
     .device__name
@@ -372,6 +371,7 @@
         flex-direction: row
         align-items: center
         justify-content: space-between
+
 
         height: 30px
 
