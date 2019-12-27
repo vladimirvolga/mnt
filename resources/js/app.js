@@ -10,6 +10,7 @@ import Vue from 'vue'
 
 Vue.component('test-store-component', require('./components/TestStoreComponent.vue').default);
 Vue.component('weather-component', require('./components/WeatherComponent.vue').default);
+Vue.component('lists-component', require('./components/ListsComponent.vue').default);
 
 
 

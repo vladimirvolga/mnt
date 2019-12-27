@@ -2,35 +2,7 @@
 import Home from '../components/Home'
 import TestStorePage from '../pages/TestStorePage'
 import WeatherPage from '../pages/WeatherPage'
-
-// import Auth from '../pages/AuthPage'
-// import Search from '../pages/SearchPage'
-// import Notfound from '../pages/404Page'
-// import Registr from '../pages/RegistrPage'
-// import Test from '../pages/TestPage'
-// import UsersIndex from '../pages/UsersIndexconst ifNotAuthenticated = (to, from, next) => {
-// //     if (!store.getters.isLoggedIn) {
-// //         next()
-// //         return
-// //     }
-// //     next('/egrn')
-// // }
-// //
-// // const ifAuthenticated = (to, from, next) => {
-// //     if (store.getters.isLoggedIn) {
-// //         next()
-// //         return
-// //     }
-// //     next('/')
-// // }'
-// import SearchEGRN from '../pages/SearchEGRNPage'
-// import SearchMyDocuments from '../pages/SearchMyDocumentsPage'
-// import SearchPeople from '../pages/SearchPeoplePage'
-
-
-// import store from '../store' // your vuex store
-
-//
+import ListsPage from '../pages/ListsPage'
 
 
 
@@ -52,6 +24,12 @@ const routes = [
         path: '/',
         name: 'weather',
         component: WeatherPage,
+    },
+
+    {
+        path: '/listspage',
+        name: 'listspage',
+        component: ListsPage,
     },
 
 

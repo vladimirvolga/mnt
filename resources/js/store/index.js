@@ -17,6 +17,7 @@ Vue.use(Vuex)
 import testStoreModule from './modules/test.store.module'
 import weatherModule from './modules/weather.module'
 import weatherPageModule from './modules/weather.page.module'
+import listsModule from './modules/lists.module'
 
 
 
@@ -32,6 +33,7 @@ const store = new Vuex.Store ({
         testStoreModule,
         weatherModule,
         weatherPageModule,
+        listsModule,
 
     }
 

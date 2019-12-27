@@ -104,6 +104,27 @@
 
 
 
+
+            <!--<draggable v-model="myArray" ghos-class="ghost" @end="onEnd">-->
+                <!--<transition-group type="transition" name="flip-list">-->
+
+                <!--<div class="sortable"-->
+                     <!--:id="element.id" v-for="element in myArray" :key="element.id">-->
+
+                    <!--<strong>{{element.name}}</strong>-->
+                    <!--<spaN>{{element.id}}</spaN>-->
+
+                <!--</div>-->
+
+                <!--</transition-group>-->
+            <!--</draggable>-->
+
+            <!--<p><strong>previous index:</strong>{{oldIndex}}</p>-->
+            <!--<p><strong>new index:</strong>{{newIndex}}</p>-->
+
+
+
+
             <!--<button class="button" @click = 'weatherRequest'>-->
                 <!--Запрос погоды</button>-->
             <!--<button class="button" @click = 'checkBlockPosition'>-->
@@ -140,13 +161,40 @@
 
 
 
+    // import draggable from 'vuedraggable'
+
 
     export default {
+
+        // components: {
+        //     draggable
+        // },
 
 
         /**   РАСКОММЕНТИРОВАТЬ "NAME", УКАЗАТЬ НАИМЕНОВАНИЕ КОМПОНЕНТА   */
 
         name: "WeatherComponent",
+
+        // data() {
+        //
+        //     return {
+        //
+        //         myArray: [
+        //
+        //             { name: "angular", id:0 },
+        //             { name: "react", id:1 },
+        //             { name: "vue", id:2 },
+        //             { name: "html", id:3 },
+        //             { name: "css", id:4 },
+        //             { name: "sass", id:5 },
+        //
+        //         ],
+        //         oldIndex: '',
+        //         newIndex: '',
+        //
+        //     }
+        //
+        // },
 
         methods: {
 
@@ -161,6 +209,12 @@
             checkBlockPosition() {
                 this.$store.dispatch('checkBlockPosition')
             },
+
+            // onEnd: function(evt) {
+            //     console.log(evt)
+            //     this.oldIndex = evt.oldIndex
+            //     this.newIndex = evt.newIndex
+            // },
 
         },
 
@@ -195,6 +249,9 @@
 
 
     }
+
+
+
 
 
 
